@@ -1,0 +1,61 @@
+{
+  "name": "resume",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^17.3.12",
+    "@angular/common": "^17.3.12",
+    "@angular/compiler": "^17.3.12",
+    "@angular/core": "^17.3.12",
+    "@angular/fire": "^18.0.1",
+    "@angular/forms": "^17.3.12",
+    "@angular/platform-browser": "^17.3.12",
+    "@angular/platform-browser-dynamic": "^17.3.12",
+    "@angular/router": "^17.3.12",
+    "bootstrap": "^3.4.1",
+    "crypto-js": "^4.2.0",
+    "firebase": "^10.13.2",
+    "firebase-tools": "^13.20.1",
+    "rxjs": "~7.8.0",
+    "sweetalert2": "^11.14.1",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.9",
+    "@angular/cli": "~17.3.9",
+    "@angular/compiler-cli": "^17.3.12",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~5.4.5"
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.6.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavinkumar025/resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kavinkumar025/resume/issues"
+  },
+  "homepage": "https://github.com/kavinkumar025/resume#readme"
+}

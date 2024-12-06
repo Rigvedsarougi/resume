@@ -1,0 +1,119 @@
+.cc-profile-image a {
+    position: relative;
+}
+
+.cc-profile-image a:before {
+    content: "";
+    border: 15px solid rgba(251, 252, 252, 0.6);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    -webkit-animation: pulsate 2.6s ease-out;
+    animation: pulsate 2.6s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
+    z-index: 99;
+    margin-top: 30px;
+}
+
+.cc-profile-image img {
+    margin-top: 30px;
+    position: relative;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    padding: 0;
+    // margin: 0;
+    border: 15px solid transparent;
+    z-index: 9999;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.cc-profile-image a:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.profile-page {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    // min-height: 80vh;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+
+.btn-secondary {
+    background-color: #007bff;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.animate-zoom {
+    animation: zoomIn 0.8s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-slide {
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.h2.title:hover {
+    transform: scale(1.1);
+}
+
+.typeText:hover {
+    transform: scale(1.2);
+}
+
+// .margin {
+//     margin-top: 10px;
+// }

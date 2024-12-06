@@ -1,0 +1,162 @@
+/* General Body and Text Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Education Section */
+.education {
+    background-color: #f9fbfd;
+    padding: 50px 0;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a73e8;
+}
+
+/* Education List */
+.education-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+/* Education Item */
+.education-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.education-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.15);
+}
+
+/* Education Header */
+.education-header {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a73e8;
+}
+
+.degree {
+    font-size: 20px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Education Details */
+.education-details {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.institute {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a73e8;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Hover Effect on Education Item Details */
+.education-item:hover .education-details {
+    background-color: #f1f7ff;
+    padding: 25px;
+    border-radius: 15px;
+    transform: translateY(-10px);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.education-item:hover .institute,
+.education-item:hover p {
+    color: #1a73e8;
+}
+
+/* Keyframes for Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.education-item {
+    animation: fadeIn 0.6s ease;
+    animation-fill-mode: forwards;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    .education-list {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .education-item {
+        padding: 20px;
+    }
+
+    .education-header,
+    .education-details {
+        padding: 15px;
+    }
+
+    .date,
+    .degree {
+        font-size: 16px;
+    }
+
+    .institute,
+    p {
+        font-size: 14px;
+    }
+}
